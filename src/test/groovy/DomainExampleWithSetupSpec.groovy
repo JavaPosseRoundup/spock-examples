@@ -19,11 +19,17 @@ class DomainExampleWithSetupSpec extends Specification{
 
     def "All talks accounted for"(){
         expect:
-        talks.size() == 4
+        4 == talks.size()
     }
 
     def "D.J. has two presentations"(){
         expect:
-        talks.count {it.presenter.firstName == "D. J."} == 2
+        2 == talks.count {it.presenter.firstName == "D. J."}
     }
+
+    def "Andrew presents something on Tarot"(){
+        expect:
+         "Andrew" == talks.find {it.topic =~ /.*Tarot/}.presenter.firstName
+    }
+
 }
