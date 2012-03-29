@@ -17,7 +17,7 @@ Tests:
 ===========
 You'll probably want to review these tests in the following order as they get more complex as we go:
 
-Simple
-WhereBlockExample
-SimpleDomainExample
-DomainExampleWithSetupSpec
+* Simple
+* WhereBlockExample
+* SimpleDomainExample
+* DomainExampleWithSetupSpec
