@@ -13,3 +13,11 @@ Install one or both of:
 Gradle - http://www.gradle.org
 IntelliJ - http://www.jetbrains.com
 
+Tests:
+===========
+You'll probably want to review these tests in the following order as they get more complex as we go:
+
+Simple
+WhereBlockExample
+SimpleDomainExample
+DomainExampleWithSetupSpec
